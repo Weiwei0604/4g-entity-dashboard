@@ -24,7 +24,6 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // Data
   const [articles, setArticles] = useState([]);
   const [entities, setEntities] = useState([]);
   const [summary, setSummary] = useState([]);
