@@ -249,10 +249,10 @@ export default function Home() {
             <tbody className="divide-y divide-slate-100">
               {summary.map((row, i) => (
                 <tr key={i} className="hover:bg-slate-50 transition">
-                  <td className="p-4 pl-8 font-bold">{row[entity] || row[0]}</td>
+                  <td className="p-4 pl-8 font-bold">{row[0]}</td>
                   <td className="p-4">
                     <span className="px-2 py-1 bg-slate-100 text-slate-500 rounded-md text-xs font-medium">
-                      {row[category] || row[1]}
+                      {row[1]}
                     </span>
                   </td>
                   <td className="p-4">
@@ -260,10 +260,10 @@ export default function Home() {
                       <div className="bg-slate-100 flex-1 h-2 rounded-full overflow-hidden max-w-[100px]">
                         <div 
                           className="bg-green-500 h-full" 
-                          style={{ width: `${((row[count] || row[2]) / 10) * 100}%` }}
+                          style={{ width: `${(row[2] / 10) * 100}%` }}
                         ></div>
                       </div>
-                      <span className="font-bold text-slate-700">{row[count] || row[2]}</span>
+                      <span className="font-bold text-slate-700">{row[2]}</span>
                     </div>
                   </td>
                 </tr>
